@@ -2,7 +2,7 @@
 
 ## Entregable 1. Informe del proceso
 
-- `Informe_Final.pdf` (fuera de esta carpeta, en la raiz de la entrega): problema,
+- `1. Actividad Transferencia PPBD 2 Carol Lopez` (fuera de esta carpeta, en la raiz de la entrega): problema,
   decisiones, datos, procesamiento, iteraciones del modelo, hiperparametros,
   regularizacion, metricas, dashboard, conclusiones y limitaciones.
 - `anexos/`: notebooks y PDFs de las etapas de contextualizacion (EDA) y
