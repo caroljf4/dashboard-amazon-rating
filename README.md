@@ -5,6 +5,8 @@ Presenta, en un dashboard interactivo, los hallazgos del contraste de
 hipotesis, la regresion lineal multiple y la regresion logistica
 desarrollados sobre el Amazon Sales Dataset descargados de Kaggle.
 
+![[Dashboard #1.png]]
+
 ## Estructura
 
 ```text
