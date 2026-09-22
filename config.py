@@ -64,6 +64,4 @@ COLOR_NAVY = "#131921"
 COLOR_ORANGE = "#FF9900"    
 COLOR_CYAN = "#146EB4"      
 COLOR_GOLD = "#F4B942"      
-COLOR_RED = "#D95D5D"       
-print("DEBUG - archivo:", __file__)
-print("DEBUG - titulo actual:", TITULO)
+COLOR_RED = "#D95D5D"

@@ -4,6 +4,7 @@ entrenar_modelo.py de la carpeta outputs/ y el dataset limpio.
 """
 import base64
 import json
+import os
 from pathlib import Path
 
 import numpy as np
@@ -38,7 +39,20 @@ COLORS = {
     "paper": "#F5F6F8",
 }
 
-app = Dash(__name__, title=config.TITULO, suppress_callback_exceptions=True)
+# En Binder el dashboard se ve a traves de jupyter-server-proxy (ruta .../proxy/8050/).
+# Si existe JUPYTERHUB_SERVICE_PREFIX estamos en Binder y Dash necesita ese prefijo;
+# en tu computador la variable no existe y todo funciona igual que antes.
+_prefijo_binder = os.environ.get("JUPYTERHUB_SERVICE_PREFIX")
+if _prefijo_binder:
+    app = Dash(
+        __name__,
+        title=config.TITULO,
+        suppress_callback_exceptions=True,
+        routes_pathname_prefix="/",
+        requests_pathname_prefix=f"{_prefijo_binder}proxy/8050/",
+    )
+else:
+    app = Dash(__name__, title=config.TITULO, suppress_callback_exceptions=True)
 server = app.server
 
 
