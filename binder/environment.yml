@@ -1,0 +1,15 @@
+name: dashboard-amazon
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - dash>=2.17,<5
+      - plotly>=5.22,<7
+      - pandas>=2.2,<4
+      - numpy>=1.26,<3
+      - scikit-learn>=1.4,<2
+      - scipy>=1.11,<2
+      - pytest>=8,<10
+      - jupyter-server-proxy>=4.1,<5
